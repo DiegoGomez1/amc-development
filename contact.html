@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AMC Development LLC</title>
+  <meta name="description" content="Contact AMC Development LLC for land acquisition, investment partnerships, and South Florida real estate development opportunities." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo/amc-logo.jpeg" alt="AMC Development LLC" /></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-content">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1 class="page-title">Let's <em>Build</em><br>Something Together</h1>
+      <p class="page-subtitle">Inquiries about land acquisition, investment partnerships, or project opportunities are welcome.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <p class="section-eyebrow reveal">Contact Information</p>
+        <div class="divider reveal"></div>
+
+        <div class="contact-info">
+          <div class="contact-item reveal">
+            <div class="contact-label">Company</div>
+            <div class="contact-value">AMC Development Group LLC</div>
+          </div>
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-label">Founded</div>
+            <div class="contact-value">2014 — South Florida</div>
+          </div>
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-label">Email</div>
+            <div class="contact-value" style="font-size:1.1rem;">
+              <a href="mailto:amcdevelopmentgroup@gmail.com" style="color:var(--gold); text-decoration:none;">amcdevelopmentgroup@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value" style="font-size:1.1rem;">
+              <a href="tel:+13055974487" style="color:var(--gold); text-decoration:none;">(305) 597-4487</a>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-label">Service Area</div>
+            <div class="contact-value">Miami-Dade County, FL</div>
+          </div>
+        </div>
+
+        <div style="margin-top:3rem; padding:1.75rem; border:1px solid rgba(184,151,74,0.15); background:rgba(184,151,74,0.04);" class="reveal">
+          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">We're interested in</div>
+          <ul style="display:flex; flex-direction:column; gap:0.6rem;">
+            <li style="display:flex; gap:0.75rem; align-items:flex-start; font-size:0.9rem; color:rgba(250,250,248,0.65);">
+              <span style="color:var(--gold);margin-top:2px;">—</span> Land acquisition opportunities
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start; font-size:0.9rem; color:rgba(250,250,248,0.65);">
+              <span style="color:var(--gold);margin-top:2px;">—</span> Joint venture partnerships
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start; font-size:0.9rem; color:rgba(250,250,248,0.65);">
+              <span style="color:var(--gold);margin-top:2px;">—</span> Investment inquiries
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start; font-size:0.9rem; color:rgba(250,250,248,0.65);">
+              <span style="color:var(--gold);margin-top:2px;">—</span> Commercial leasing discussions
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="reveal reveal-delay-1">
+        <p class="section-eyebrow">Send a Message</p>
+        <div class="divider"></div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="(305) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic</option>
+              <option value="land">Land Acquisition</option>
+              <option value="jv">Joint Venture / Partnership</option>
+              <option value="investment">Investment Inquiry</option>
+              <option value="leasing">Commercial Leasing</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="margin-top:0.5rem; width:100%; text-align:center; cursor:pointer;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo"><img src="assets/images/logo/amc-logo.jpeg" alt="AMC Development LLC" /></div>
+    <nav class="footer-links">
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2026 AMC Development Group LLC. South Florida.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
