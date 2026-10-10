@@ -78,12 +78,12 @@ const PROJECTS = [
   },
   {
     address: '120 NW 120th Avenue',
-    cat: 'development',
-    type: 'Future Development Site',
-    status: 'Land Held',
+    cat: 'delivered',
+    type: 'Development Site',
+    status: 'Sold',
     img: '120-nw-120.jpg',
-    summary: 'Land held for future development. Program and timeline to be determined.',
-    specs: { Units: 'TBD', Use: 'TBD', Stage: 'Pre-development', Status: 'Land held' },
+    summary: 'Development site acquired and held by AMC, since sold.',
+    specs: { Use: 'Land', Scope: 'Land sale', Completed: '\u2014', Status: 'Sold' },
   },
   {
     address: '13901 NW 112th Avenue',
