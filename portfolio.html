@@ -3,217 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — AMC Development LLC</title>
-  <meta name="description" content="AMC Development LLC's portfolio of completed custom homes, pipeline apartment developments, and South Florida real estate projects." />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/nav.css" />
-  <link rel="stylesheet" href="assets/css/animations.css" />
+  <title>Portfolio — AMC Development Group</title>
+  <meta name="description" content="Custom homes delivered, multi-family developments in the pipeline and income properties by AMC Development Group across Miami-Dade County." />
+  <link rel="icon" href="assets/img/logo.jpg" />
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
 
-  <nav>
-    <a href="index.html" class="nav-logo"><img src="assets/images/logo/amc-logo.jpeg" alt="AMC Development LLC" /></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="rentals.html">Rentals</a></li>
-      <li><a href="contact.html" class="nav-cta">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <div class="topbar">
+    <div class="wrap">
+      <span class="topbar-place">Miami-Dade County, Florida &nbsp;&middot;&nbsp; Est. 2014</span>
+      <div class="topbar-contact">
+        <a href="tel:+13055974487">(305) 597-4487</a>
+        <a href="mailto:amcdevelopmentgroup@gmail.com">amcdevelopmentgroup@gmail.com</a>
+      </div>
+    </div>
+  </div>
 
-  <header class="page-header">
-    <div class="page-header-content">
-      <p class="section-eyebrow">Our Work</p>
-      <h1 class="page-title"><em>Portfolio</em> of<br>Completed &amp; Active Projects</h1>
-      <p class="page-subtitle">From custom residences to large-scale multi-family communities — a decade of development across South Florida.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo"><img src="assets/img/logo.jpg" alt="AMC Development Group LLC" /></a>
+      <nav class="menu">
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-solid">Inquire</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">Menu</button>
     </div>
   </header>
 
-  <!-- COMPLETED HOMES -->
-  <section class="section">
-    <p class="section-eyebrow reveal">Completed &amp; Sold</p>
-    <div class="divider reveal"></div>
-    <h2 class="section-title reveal">Custom <em>Residences</em></h2>
-    <p class="section-body reveal">Six custom homes built and sold across Miami-Dade County, each reflecting AMC's commitment to quality construction and market-informed design.</p>
-
-    <div class="projects-grid" style="margin-top:3rem;">
-
-      <!-- 80 NW 129 – spotlight -->
-      <div class="project-card project-card-wide reveal">
-        <div class="project-card-img">
-          <img src="assets/images/projects/80-nw-129/DJI_0026.jpg" alt="80 NW 129th Avenue" />
-          <span class="project-badge badge-sold">Sold 2024</span>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> / Portfolio</p>
+          <p class="eyebrow">Portfolio</p>
+          <h1>Twelve years of <em>building</em> in Miami-Dade.</h1>
         </div>
-        <div class="project-card-body" style="display:flex;flex-direction:column;justify-content:center;">
-          <div class="project-address">80 NW 129th Avenue</div>
-          <div class="project-type">Custom New Construction</div>
-          <p class="project-detail" style="margin-top:0.5rem;">New construction home completed and sold in 2024.</p>
+        <div>
+          <p class="lead">Custom residences delivered, multi-family communities in entitlement, and the income properties that anchor the firm.</p>
+          <div class="stats stats-mini">
+            <div><div class="stat-num">6</div><div class="stat-label">Delivered</div></div>
+            <div><div class="stat-num">291</div><div class="stat-label">Units planned</div></div>
+            <div><div class="stat-num">5</div><div class="stat-label">Income assets</div></div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-card-img">
-          <img src="assets/images/projects/320-sw-125/325%20sw%20125AV%20-1.jpg" alt="320 SW 125th Avenue" />
-          <span class="project-badge badge-sold">Sold 2021</span>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">All Projects</p>
+            <h2>Every address, <em>at a glance</em></h2>
+          </div>
+          <div class="filters" data-grid="portfolio-grid">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="delivered">Delivered</button>
+            <button data-filter="development">In Development</button>
+            <button data-filter="income">Income</button>
+          </div>
         </div>
-        <div class="project-card-body">
-          <div class="project-address">320 SW 125th Avenue</div>
-          <div class="project-type">Custom New Construction</div>
-          <p class="project-detail">New construction home completed and sold in 2021.</p>
+        <div class="project-grid" id="portfolio-grid" data-specs></div>
+      </div>
+    </section>
+
+    <section class="section section-paper" id="pipeline">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Development Pipeline</p>
+            <h2>Current &amp; <em>future</em> projects</h2>
+          </div>
+          <p class="lead">The move from single-family homes to community-scale development.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Address</th><th>Project</th><th>Units</th><th>Use</th><th>Stage</th><th>Status</th></tr></thead>
+            <tbody data-table="development" data-cols="Units,Use,Stage,Status"></tbody>
+          </table>
         </div>
       </div>
+    </section>
 
-      <div class="project-card reveal">
-        <div class="project-card-img">
-          <img src="assets/images/projects/231-nw-124/231%20NW%20124th%20Ave%20Miami%20FL-large-002-13-8977-1500x1000-72dpi.jpg" alt="231 NW 124th Avenue" />
-          <span class="project-badge badge-sold">Sold 2019</span>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Delivered</p>
+            <h2>Completed <em>residences</em></h2>
+          </div>
         </div>
-        <div class="project-card-body">
-          <div class="project-address">231 NW 124th Avenue</div>
-          <div class="project-type">Custom New Construction</div>
-          <p class="project-detail">New construction home completed and sold in 2019.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Address</th><th>Project</th><th>Scope</th><th>Completed</th><th>Status</th></tr></thead>
+            <tbody data-table="delivered" data-cols="Scope,Completed,Status"></tbody>
+          </table>
         </div>
       </div>
+    </section>
 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-card-img">
-          <img src="assets/images/projects/331-sw-124/331%20SW%20124%20AV%20MIAMI%20FL%2033182-MLS_Size-006-54-3115-1600x1200-72dpi.jpg" alt="331 SW 124th Avenue" />
-          <span class="project-badge badge-sold">Sold 2016</span>
+    <section class="band">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Partner With AMC</p>
+          <h2>Open to land, joint ventures and capital partners.</h2>
+          <a href="contact.html" class="btn">Start an Inquiry</a>
         </div>
-        <div class="project-card-body">
-          <div class="project-address">331 SW 124th Avenue</div>
-          <div class="project-type">Custom New Construction</div>
-          <p class="project-detail">AMC's first new construction home — completed and sold in 2016.</p>
-        </div>
+        <ul class="band-list">
+          <li>Land acquisition</li>
+          <li>Joint ventures</li>
+          <li>Investment partnerships</li>
+          <li>Commercial leasing</li>
+        </ul>
       </div>
+    </section>
+  </main>
 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-card-img">
-          <img src="assets/images/projects/160-sw-129/50327eacbe960bbe9d82eae6982c9b59-cc_ft_768.webp" alt="160 SW 129th Avenue" />
-          <span class="project-badge badge-sold" style="background:rgba(184,151,74,0.15);color:var(--gold);border:1px solid var(--gold);">Renovation</span>
-        </div>
-        <div class="project-card-body">
-          <div class="project-address">160 SW 129th Avenue</div>
-          <div class="project-type">Full Property Renovation</div>
-          <p class="project-detail">Comprehensive remodel — full interior and exterior renovation of existing residence.</p>
-        </div>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo"><img src="assets/img/logo.jpg" alt="AMC Development Group LLC" /></a>
+        <p>A boutique South Florida developer of custom residences, multi-family communities and income properties since 2014.</p>
       </div>
-
-      <div class="project-card reveal reveal-delay-3">
-        <div class="project-card-img">
-          <img src="assets/images/projects/365-nw-128/PHOTO-2026-05-29-16-34-05.jpg" alt="365 NW 128th Street" />
-          <span class="project-badge badge-sold">Sold April 2026</span>
-        </div>
-        <div class="project-card-body">
-          <div class="project-address">365 NW 128th Street</div>
-          <div class="project-type">Custom Luxury Residence</div>
-          <p class="project-detail">Plans finalized January 2026. Sold April 2026.</p>
-        </div>
+      <div>
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-
+      <div>
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="portfolio.html">Delivered homes</a></li>
+          <li><a href="portfolio.html#pipeline">Development pipeline</a></li>
+          <li><a href="rentals.html">Income properties</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+13055974487">(305) 597-4487</a></li>
+          <li><a href="mailto:amcdevelopmentgroup@gmail.com">amcdevelopmentgroup@gmail.com</a></li>
+          <li>Miami-Dade County, FL</li>
+        </ul>
+      </div>
     </div>
-  </section>
-
-  <!-- PIPELINE -->
-  <section class="section section-alt">
-    <p class="section-eyebrow reveal">Development Pipeline</p>
-    <div class="divider reveal"></div>
-    <h2 class="section-title reveal">Current &amp; <em>Future</em> Projects</h2>
-    <p class="section-body reveal">AMC's most ambitious projects to date — transitioning from single-family homes to multi-family and community-scale development.</p>
-
-    <div class="pipeline-list">
-
-      <div class="pipeline-item reveal" style="display:grid;grid-template-columns:auto 2fr 1fr 1fr;gap:2rem;align-items:center;">
-        <div style="width:120px;height:80px;overflow:hidden;flex-shrink:0;">
-          <img src="assets/images/projects/12501-sw-236/12501%20SW%20236%20ST.jpg" alt="12501 SW 236th Street" style="width:100%;height:100%;object-fit:cover;" />
-        </div>
-        <div>
-          <div class="pipeline-address">12501 SW 236th Street</div>
-          <div class="pipeline-desc">Affordable Housing Community</div>
-          <p class="project-detail" style="margin-top:0.4rem;">Rezoning completed May 2026. Property currently under contract. AMC's largest development project — a landmark in attainable housing for South Florida.</p>
-          <div style="margin-top:0.75rem;"><span class="project-badge badge-active" style="position:static;">Rezoning Complete — Under Contract</span></div>
-        </div>
-        <div>
-          <div class="pipeline-units">248</div>
-          <div class="pipeline-units-label">Residential Units</div>
-        </div>
-        <div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-bottom:0.3rem;">Type</div>
-          <div style="font-size:0.9rem;color:var(--white);">Affordable Housing</div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-top:1rem;margin-bottom:0.3rem;">Status</div>
-          <div style="font-size:0.9rem;color:var(--white);">Under Contract</div>
-        </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>&copy; 2026 AMC Development Group LLC. All rights reserved.</span>
+        <span>Andres Gomez &amp; Manuel Sanoja, Principals</span>
       </div>
-
-      <div class="pipeline-item reveal reveal-delay-1" style="display:grid;grid-template-columns:auto 2fr 1fr 1fr;gap:2rem;align-items:center;">
-        <div style="width:120px;height:80px;overflow:hidden;flex-shrink:0;">
-          <img src="assets/images/projects/14790-sw-264/14790%20SW%20264%20ST.jpg" alt="14790 SW 264th Street" style="width:100%;height:100%;object-fit:cover;" />
-        </div>
-        <div>
-          <div class="pipeline-address">14790 SW 264th Street</div>
-          <div class="pipeline-desc">Apartment Development</div>
-          <p class="project-detail" style="margin-top:0.4rem;">Plans submitted for review. Multi-family residential community in the entitlement phase.</p>
-          <div style="margin-top:0.75rem;"><span class="project-badge badge-plans" style="position:static;">Plans Submitted</span></div>
-        </div>
-        <div>
-          <div class="pipeline-units">43</div>
-          <div class="pipeline-units-label">Residential Units</div>
-        </div>
-        <div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-bottom:0.3rem;">Type</div>
-          <div style="font-size:0.9rem;color:var(--white);">Multi-Family</div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-top:1rem;margin-bottom:0.3rem;">Status</div>
-          <div style="font-size:0.9rem;color:var(--white);">Plans Under Review</div>
-        </div>
-      </div>
-
-      <div class="pipeline-item reveal reveal-delay-2" style="display:grid;grid-template-columns:auto 2fr 1fr 1fr;gap:2rem;align-items:center;">
-        <div style="width:120px;height:80px;overflow:hidden;flex-shrink:0;">
-          <img src="assets/images/projects/120-nw-120/PHOTO-2026-05-29-16-36-10.jpg" alt="120 NW 120th Avenue" style="width:100%;height:100%;object-fit:cover;" />
-        </div>
-        <div>
-          <div class="pipeline-address">120 NW 120th Avenue</div>
-          <div class="pipeline-desc">Future Development Site</div>
-          <p class="project-detail" style="margin-top:0.4rem;">Land held for future development. Project type and timeline to be determined.</p>
-          <div style="margin-top:0.75rem;"><span class="project-badge badge-pipeline" style="position:static;">Future Project</span></div>
-        </div>
-        <div>
-          <div class="pipeline-units">TBD</div>
-          <div class="pipeline-units-label">Units</div>
-        </div>
-        <div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-bottom:0.3rem;">Type</div>
-          <div style="font-size:0.9rem;color:var(--white);">TBD</div>
-          <div style="font-family:var(--font-condensed);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(250,250,248,0.35);margin-top:1rem;margin-bottom:0.3rem;">Status</div>
-          <div style="font-size:0.9rem;color:var(--white);">Land Held</div>
-        </div>
-      </div>
-
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section" style="text-align:center;">
-    <h2 class="section-title reveal" style="max-width:600px;margin:0 auto 1rem;">Interested in <em>Partnering</em> with AMC?</h2>
-    <p class="section-body reveal" style="margin:0 auto 2rem;text-align:center;">We're always open to conversations about land acquisition, joint ventures, and investment opportunities in South Florida.</p>
-    <a href="contact.html" class="btn btn-gold reveal">Get in Touch</a>
-  </section>
-
-  <footer>
-    <div class="footer-logo"><img src="assets/images/logo/amc-logo.jpeg" alt="AMC Development LLC" /></div>
-    <nav class="footer-links">
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="rentals.html">Rentals</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <p class="footer-copy">© 2026 AMC Development Group LLC. South Florida.</p>
   </footer>
 
+  <script src="assets/js/projects.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
